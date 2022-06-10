@@ -47,8 +47,6 @@ const uploadFile = (event) => {
 			.then((url) => {
 				document.getElementById("link").href = url;
 				document.getElementById("link").innerText = url;
-
-				document.querySelector("object").setAttribute("data", url);
 			});
 	} else {
 		console.log("Upload Only HTML File");
