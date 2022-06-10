@@ -5,40 +5,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HTML File Uploader</title>
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
-		<main>
-			<div class="container">
-				<h1>Upload HTML File</h1>
-				<section class="upload-section">
-					<form>
-						<div class="file-upload">
-							<label for="fileAttachment">Browse HTML File</label>
-							<input
-								type="file"
-								name="fileAttachment"
-								id="fileAttachment"
-								class="upload"
-								placeholder="Select File"
-								accept=".html,.htm"
-								hidden
-							/>
-						</div>
+		<div class="container">
+			<h1>Upload HTML File</h1>
+			<section class="upload-section">
+				<form>
+					<div class="file-upload">
+						<label for="fileAttachment">Browse HTML File</label>
 						<input
-							type="text"
-							id="fileuploadurl"
-							placeholder="Maximum file size is 10MB"
-							readonly
+							type="file"
+							name="fileAttachment"
+							id="fileAttachment"
+							class="upload"
+							placeholder="Select File"
+							accept=".html,.htm"
+							hidden
 						/>
-						<a href="" target="_blank" rel="noopener noreferrer" id="link"></a>
-						<button type="submit" class="upload-btn" disabled>Upload</button>
-					</form>
-				</section>
-			</div>
-
-			<object data="" type="text/html"></object>
-		</main>
+					</div>
+					<input
+						type="text"
+						id="fileuploadurl"
+						placeholder="Maximum file size is 10MB"
+						readonly
+					/>
+					<a href="" target="_blank" rel="noopener noreferrer" id="link"></a>
+					<button type="submit" class="upload-btn" disabled>Upload</button>
+				</form>
+			</section>
+		</div>
 
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
